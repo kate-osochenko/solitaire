@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #background {
     position: absolute;
     width: 100%;
@@ -11,10 +12,39 @@ body {
     z-index: -1;
 }
 #container {
-    width: 120px;
-    height: 155px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#deck, #deck_open, #aces > div, #line2 > div {
+    width: 100px;
+    height: 135px;
     border: 2px solid darkgray;
     border-radius: 5%;
+    float: left;
+    margin: 15px;
+}
+
+#line2, #line1, #container {
+    width: 938px;
+}
+
+#line1 {
+    position: absolute;
+    margin-top: 15px;
+}
+
+#line2 {
+    position: absolute;
+    margin-top: 200px;
+}
+
+#aces {
+    width: 536px;
+    float: right;
 }
 
 /*#deck, #deck_open, #clubs, #hearts, #spades, #dimonds, #place,*/
