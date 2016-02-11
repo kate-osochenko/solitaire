@@ -21,8 +21,8 @@ body {
 }
 #deck, #deck_open, #aces > div, #line2 > div {
     width: 100px;
-    height: 135px;
-    border: 2px solid darkgray;
+    height: 142px;
+    border: 1px solid darkgray;
     border-radius: 5%;
     float: left;
     margin: 15px;
@@ -45,6 +45,23 @@ body {
 #aces {
     width: 536px;
     float: right;
+    margin-right: 6px;
+}
+#aces > div {
+    margin: 16px;
+    background: linear-gradient(to top, green, rgba(87, 171, 121, 0.85));
+    border: 0;
+    border-bottom: 2px solid rgba(87, 171, 121, 0.85);
+    border-radius: 5%;
+    display: table;
 }
 
+#aces > div > p {
+    font-family: serif;
+    font-size: 80px;
+    color: rgba(87, 171, 121, 0.85);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
 /*#deck, #deck_open, #clubs, #hearts, #spades, #dimonds, #place,*/
